@@ -16,38 +16,6 @@
 * C++
 * MySql
 
-## 目录树
-```
-.
-├── code           源代码
-│   ├── buffer
-│   ├── config
-│   ├── http
-│   ├── log
-│   ├── timer
-│   ├── pool
-│   ├── server
-│   └── main.cpp
-├── test           单元测试
-│   ├── Makefile
-│   └── test.cpp
-├── resources      静态资源
-│   ├── index.html
-│   ├── image
-│   ├── video
-│   ├── js
-│   └── css
-├── bin            可执行文件
-│   └── server
-├── log            日志文件
-├── webbench-1.5   压力测试
-├── build          
-│   └── Makefile
-├── Makefile
-├── LICENSE
-└── readme.md
-```
-
 
 ## 项目启动
 需要先配置好对应的数据库
@@ -79,8 +47,6 @@ make
 ```
 
 ## 压力测试
-![image-webbench](https://github.com/markparticle/WebServer/blob/master/readme.assest/%E5%8E%8B%E5%8A%9B%E6%B5%8B%E8%AF%95.png)
-```bash
 ./webbench-1.5/webbench -c 100 -t 5 http://ip:port/
 ./webbench-1.5/webbench -c 1000 -t 5 http://ip:port/
 ./webbench-1.5/webbench -c 7000 -t 5 http://ip:port/
@@ -88,8 +54,3 @@ make
 ```
 * 测试环境: Ubuntu:19.10 cpu:i5-8400 内存:8G 
 * 支持上万并发量
-
-## TODO
-* config配置
-* 完善单元测试
-* 实现循环缓冲区
