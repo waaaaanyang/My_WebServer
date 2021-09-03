@@ -52,5 +52,5 @@ make
 ./webbench-1.5/webbench -c 7000 -t 5 http://ip:port/
 ./webbench-1.5/webbench -c 10000 -t 5 http://ip:port/
 ```
-* 测试环境: Ubuntu:19.10 cpu:i5-8400 内存:8G 
+* 测试环境: Ubuntu:19.10 cpu:i5-8400 内存:4G 
 * 支持上万并发量
